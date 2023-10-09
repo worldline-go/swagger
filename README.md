@@ -1,16 +1,16 @@
 # swagger
 
+[![License](https://img.shields.io/github/license/worldline-go/swagger?color=red&style=flat-square)](https://raw.githubusercontent.com/worldline-go/swagger/main/LICENSE)
+[![Coverage](https://img.shields.io/sonar/coverage/worldline-go_swagger?logo=sonarcloud&server=https%3A%2F%2Fsonarcloud.io&style=flat-square)](https://sonarcloud.io/summary/overall?id=worldline-go_swagger)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/worldline-go/swagger/test.yml?branch=main&logo=github&style=flat-square&label=ci)](https://github.com/worldline-go/swagger/actions)
+[![Go Report Card](https://goreportcard.com/badge/github.com/worldline-go/swagger?style=flat-square)](https://goreportcard.com/report/github.com/worldline-go/swagger)
+[![Go PKG](https://raw.githubusercontent.com/worldline-go/guide/main/badge/custom/reference.svg)](https://pkg.go.dev/github.com/worldline-go/swagger)
+
 This is for swaggo extension library to set extra variables without touching the generated file.
 
 ```sh
-go get github.com/worldline-go/utility/swagger
+go get github.com/worldline-go/swagger
 ```
-
-__OAuth2Application__ for service authentication.  
-__OAuth2Implicit__ for user authentication but need to set implicit flow!  
-__OAuth2Password__ for user authentication with directly with username and password.  
-__OAuth2AccessCode__ for user authentication with code, it will redirect to the authUrl to login.  
-
 
 ## Usage
 
@@ -36,6 +36,11 @@ func Info(version string, provider auth.InfProvider) error {
 	)
 }
 ```
+
+> __OAuth2Application__ for service authentication.  
+> __OAuth2Implicit__ for user authentication but need to set implicit flow!  
+> __OAuth2Password__ for user authentication with directly with username and password.  
+> __OAuth2AccessCode__ for user authentication with code, it will redirect to the authUrl to login.  
 
 Inside of the general information of server:
 
